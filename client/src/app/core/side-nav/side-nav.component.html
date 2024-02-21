@@ -1,0 +1,40 @@
+<div><a clrVerticalNavLink  routerLinkActive="active"(click)="clickProduct">
+    <!-- <cds-icon clrVerticalNavIcon shape="user"></cds-icon> -->
+  Product
+  <clr-datagrid >
+    <clr-dg-column>Product ID</clr-dg-column>
+    <clr-dg-column>Category</clr-dg-column>
+    <clr-dg-column>Price</clr-dg-column>
+    <clr-dg-column>Caracterstique</clr-dg-column>
+  
+    <clr-dg-row *ngFor="let product of products">
+      <clr-dg-cell>{{ product.id }}</clr-dg-cell>
+      <clr-dg-cell>{{ product.Category }}</clr-dg-cell>
+      <clr-dg-cell>{{ product.Price }}</clr-dg-cell>
+      <clr-dg-cell>{{ product.Caracterstique }}</clr-dg-cell>
+    </clr-dg-row>
+  
+    <clr-dg-footer>{{ products.length }} product</clr-dg-footer>
+  </clr-datagrid>
+  </a>
+  <a clrVerticalNavLink  routerLinkActive="active">
+    <!-- <cds-icon clrVerticalNavIcon shape="bolt"></cds-icon> -->
+    Empoyer
+   </a>
+  <a clrVerticalNavLink  routerLinkActive="active">
+    <!-- <cds-icon clrVerticalNavIcon shape="sad-face"></cds-icon> -->
+    Poison
+  </a>
+  <a clrVerticalNavLink  routerLinkActive="active">
+    <!-- <cds-icon clrVerticalNavIcon shape="bug"></cds-icon> -->
+    Grass
+  </a>
+  <a clrVerticalNavLink  routerLinkActive="active">
+    <!-- <cds-icon clrVerticalNavIcon shape="shield"></cds-icon> -->
+    Fighting
+  </a>
+  <a clrVerticalNavLink routerLink="" routerLinkActive="active">
+    Credit
+  </a>
+</div>
+  
