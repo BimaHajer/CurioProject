@@ -1,0 +1,29 @@
+<div class="btn-group btn-primary">
+  <button routerLink="add" class="btn">Add</button>
+  <button routerLink="update" class="btn btn-success">Edit</button>
+  <button class="btn btn-danger" (click)="showClick()">Delete</button>
+</div>
+
+<clr-datagrid>
+    <clr-dg-column>User ID</clr-dg-column> 
+    <clr-dg-column>title</clr-dg-column>
+    <clr-dg-column>description </clr-dg-column>
+    <clr-dg-column>createdAt </clr-dg-column>
+   
+     
+  <clr-dg-row *ngFor="let user of users">
+    <clr-dg-cell>{{ user.id }}</clr-dg-cell>
+    <clr-dg-cell>{{ user.title }}</clr-dg-cell>
+    <clr-dg-cell>{{ user.description}}</clr-dg-cell>
+    <clr-dg-cell>{{ user.createdAt | date }}</clr-dg-cell>
+
+  </clr-dg-row>
+    <clr-dg-detail *clrIfDetail="let detail">
+        <clr-dg-detail-header></clr-dg-detail-header>
+        <clr-dg-detail-body>
+        </clr-dg-detail-body>
+    </clr-dg-detail>
+
+    <clr-dg-footer></clr-dg-footer>
+</clr-datagrid>
+<app-delete-mark *ngIf="show" [idMark]="idmark" (closed)="close()"></app-delete-mark>

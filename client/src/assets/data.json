@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "Full Stack Formation",
+    "description": "This comprehensive formation covers a wide range of topics in both graphic design and digital marketing.",
+    "createdAt": "2024-02-27T08:00:00Z",
+    "createdBy": "JohnDoe123",
+    "updatedAt": "2024-02-27T12:00:00Z",
+    "updatedBy": "JaneSmith456",
+    "idFormer": 123,
+    "specialization": "Full Stack",
+    "numberHours": 60,
+    "active": true
+  },
+  {
+    "id": 2,
+    "title": "Advanced Digital Marketing Strategies",
+    "description": "This formation delves deep into advanced strategies and techniques in the field of digital marketing.",
+    "createdAt": "2024-02-27T10:30:00Z",
+    "createdBy": "AliceJohnson789",
+    "updatedAt": "2024-02-27T14:45:00Z",
+    "updatedBy": "RobertBrown321",
+    "idFormer": 456,
+    "specialization": "Digital Marketing",
+    "numberHours": 40,
+    "active": true
+  }
+  ,
+  {
+    "id": 3,
+    "title": "Web Development Bootcamp",
+    "description": "This intensive bootcamp covers all aspects of web development, including front-end and back-end technologies.",
+    "createdAt": "2024-02-27T09:00:00Z",
+    "createdBy": "SarahSmith789",
+    "updatedAt": "2024-02-27T13:30:00Z",
+    "updatedBy": "MichaelBrown456",
+    "idFormer": 789,
+    "specialization": "Web Development",
+    "numberHours": 80,
+    "active": true
+  }
+  
+  ]

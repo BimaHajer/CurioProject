@@ -1,0 +1,35 @@
+<section>
+    <form clrForm  [formGroup]="markForm">
+        <clr-input-container>
+          <label>Name</label>
+          <input clrInput type="text" formControlName="name" />
+          <clr-control-error *clrIfError="'required'">le nom est obligatoire</clr-control-error>
+        </clr-input-container> 
+        <clr-input-container>
+            <label>Description</label>
+            <input clrInput type="text" formControlName="description" />
+        </clr-input-container>
+         
+        <clr-input-container>
+          <label>Status </label>
+          <input clrInput type="text" formControlName="status" />
+          <clr-control-error *clrIfError="'required'">la status est obligatoire</clr-control-error>
+        </clr-input-container> 
+        <clr-input-container>
+          <label>image </label>
+          <input clrInput type="image" formControlName="image" />
+           
+         <div class="clr-col-12 clr-col-sm-12  clr-col-md-4  clr-col-lg-4  clr-col-xl-2">
+            <a (click)="fileInput.click()" class="card">
+              <clr-icon class="plus-icon" shape="plus-circle" > file</clr-icon>
+            </a><br>
+            <input hidden type="file"  #fileInput (change)="upload($event)">
+         </div>
+        </clr-input-container> 
+  
+  
+  
+        
+  
+      </form>
+  </section>
