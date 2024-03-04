@@ -19,6 +19,7 @@ import { AddCategoryComponent } from './category/add-category/add-category.compo
 import { UpdateCategoryComponent } from './category/update-category/update-category.component';
 import { DeleteCategoryComponent } from './category/delete-category/delete-category.component';
 import { DetailCategoryComponent } from './category/detail-category/detail-category.component';
+import { ProductMangementComponent } from './product-mangement/product-mangement.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { DetailCategoryComponent } from './category/detail-category/detail-categ
     UpdateCategoryComponent,
     DeleteCategoryComponent,
     DetailCategoryComponent,
+    ProductMangementComponent,
  
 
     

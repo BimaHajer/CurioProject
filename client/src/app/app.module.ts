@@ -12,12 +12,12 @@ import { ClarityIcons, userIcon ,gridViewIcon, libraryIcon, dollarIcon, viewList
 import {  ReactiveFormsModule } from '@angular/forms';
 
 
+
 ClarityIcons.addIcons(userIcon,gridViewIcon,libraryIcon,dollarIcon,viewListIcon,plusIcon,rulerPencilIcon,treeViewIcon,volumeIcon,bookmarkIcon)
 
 @NgModule({
   declarations: [
-    AppComponent,
-   
+    AppComponent,  
     
   ],
   imports: [
